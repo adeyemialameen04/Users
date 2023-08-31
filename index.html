@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="resets.css" />
+  </head>
+  <body>
+    <main>
+      <form id="userForm">
+        <div>
+          <label for="name">Name</label>
+          <input required type="text" id="name" placeholder="User name" />
+        </div>
+        <div>
+          <label for="age">Age</label>
+          <input
+            type="number"
+            id="age"
+            placeholder="User age"
+            min="4"
+            max="90"
+            required
+          />
+        </div>
+        <button id="submitBtn" type="submit">Add User</button>
+      </form>
+      <div id="users"></div>
+    </main>
+  </body>
+  <script src="app.js"></script>
+</html>
